@@ -237,7 +237,7 @@ class Afterpay_Afterpay_Model_Api_Adapters_Adapterv1
     private function _getStateRequired() {
         $destinations = (string)Mage::getStoreConfig('general/region/state_required');
 
-        $state_required = !empty($destinations) ? explode(',', $destinations) : [];
+        $state_required = !empty($destinations) ? explode(',', $destinations) : array();
 
         return $state_required; 
     }
